@@ -20,7 +20,7 @@
                     <i class="fas fa-angle-right" @click="next"></i>
                 </div>
                 <div class="nav">
-                    <i v-for="(image, index) in images" :class="(index === counter) ? 'active' : ''" class="fas fa-circle"></i>
+                    <i v-for="(image, index) in images" :class="(index === counter) ? 'active' : ''" class="fas fa-circle" @click="counter=index"></i>
                 </div>
             </div>
         </div>
