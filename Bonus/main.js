@@ -9,11 +9,6 @@
 // cliccando sulle frecce della tastiera sinista e destra scorriamo tra le immagini
 // I bonus metteteli in una cartella "bonus".
 
-Vue.config.keyCodes = {
-    right: 39,
-    left: 37
-  }
-
 let app = new Vue({
     el: '.container',
     data: {
