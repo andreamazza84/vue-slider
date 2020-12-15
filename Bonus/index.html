@@ -8,7 +8,7 @@
         <title>VueJs Carosel Bonus</title>
     </head>
     <body>
-        <div class="container" v-on:keydown.right="next">
+        <div class="container">
             <div class="slider-wrapper">
                 <div class="prev">
                     <i class="fas fa-angle-left" @click="prev"></i>
@@ -17,7 +17,7 @@
                     <img class="active" :src="images[counter]" alt="">
                 </div>
                 <div class="next">
-                    <i class="fas fa-angle-right" v-on:click="next"></i>
+                    <i class="fas fa-angle-right" @click="next"></i>
                 </div>
                 <div class="nav">
                     <!-- Bonus: ... @click="counter=index"  per vincolare il selettore alla foto corrispondente -->
