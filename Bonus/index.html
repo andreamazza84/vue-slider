@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
         <link rel="stylesheet" href="style.css">
-        <title>VueJs Carosel</title>
+        <title>VueJs Carosel Bonus</title>
     </head>
     <body>
         <div class="container">
@@ -20,6 +20,7 @@
                     <i class="fas fa-angle-right" @click="next"></i>
                 </div>
                 <div class="nav">
+                    <!-- Bonus: ... @click="counter=index"  per vincolare il selettore alla foto corrispondente -->
                     <i v-for="(image, index) in images" :class="(index === counter) ? 'active' : ''" class="fas fa-circle" @click="counter=index"></i>
                 </div>
             </div>

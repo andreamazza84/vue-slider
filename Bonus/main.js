@@ -37,3 +37,7 @@ let app = new Vue({
         },
     },
 });
+
+//Bonus
+const stopCarosel = setInterval(app.next, 3000);
+// clearInterval(stopCarosel);
