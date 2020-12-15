@@ -9,6 +9,11 @@
 // cliccando sulle frecce della tastiera sinista e destra scorriamo tra le immagini
 // I bonus metteteli in una cartella "bonus".
 
+Vue.config.keyCodes = {
+    right: 39,
+    left: 37
+  }
+
 let app = new Vue({
     el: '.container',
     data: {
@@ -38,6 +43,19 @@ let app = new Vue({
     },
 });
 
+
+
 //Bonus
 const stopCarosel = setInterval(app.next, 3000);
 // clearInterval(stopCarosel);
+
+//Bonus
+document.addEventListener('keydown', function(e){
+    if (e.keyCode === 39) {
+        app.next();    
+    }
+    else if (e.keyCode === 37) {
+        app.prev();
+    }
+    //console.log(e.keyCode);
+});
